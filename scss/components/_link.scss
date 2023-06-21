@@ -1,0 +1,22 @@
+@use "../variables/variables" as v;
+
+.link {
+  color: v.$white;
+  background-color: v.$purple;
+  border-radius: v.$radius;
+  padding: 13px 30px;
+  transition: v.$transition;
+}
+
+.link-underline {
+  color: v.$black;
+  font-weight: bold;
+  background: linear-gradient(currentColor 0 0) 0 100% / var(--d, 0) 1px
+    no-repeat;
+  --d: 100%;
+  padding-bottom: 3px;
+}
+
+.link:hover{
+  background-color: v.$dark-purple;
+}

@@ -1,0 +1,37 @@
+@use "../variables/variables" as v;
+
+.about {
+  position: relative;
+  padding: 80px 70px;
+  border-radius: v.$radius-xl;
+  min-height: 420px;
+  overflow: hidden;
+  background: url("../../assets/about-img.png") 120% center / contain no-repeat
+    rgb(246, 246, 246);
+  margin-bottom: 150px;
+
+  h2 {
+    font-size: v.$fs-lg;
+    margin-bottom: 25px;
+  }
+
+  p {
+    font-size: v.$fs-sm;
+    width: 52%;
+    line-height: 25px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (width < 1255px) {
+  .about {
+    padding: 80px 20px;
+    text-align: center;
+    background: v.$light-gray;
+
+    p {
+      width: 100%;
+      margin-bottom: 55px;
+    }
+  }
+}

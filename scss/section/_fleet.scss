@@ -1,0 +1,70 @@
+@use "../variables/variables" as v;
+
+.fleet {
+  .fleet-top {
+    text-align: center;
+
+    h2 {
+      font-size: v.$fs-lg;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: v.$fs-md;
+      margin-bottom: 50px;
+    }
+  }
+
+  .swiper-slide {
+    width: 370px !important;
+    height: 400px !important;
+    cursor: grab;
+
+    .fleet-car {
+      position: relative;
+      height: 235px;
+      background-color: v.$light-gray;
+      border-radius: v.$radius-xl;
+      margin-bottom: 30px;
+      transition: v.$transition;
+
+      img {
+        width: 65%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    &:hover .fleet-car,
+    &:hover .passengers {
+      background-color: v.$light-purple;
+    }
+
+    h4 {
+      font-size: v.$fs-sm;
+      margin-bottom: 15px;
+    }
+
+    .passengers {
+      display: inline-block;
+      background-color: v.$light-gray;
+      padding: 7px 10px;
+      border-radius: v.$radius;
+      transition: v.$transition;
+
+      span {
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+@media (width < 650px) {
+  .fleet {
+    .swiper-slide {
+      width: 270px !important;
+    }
+  }
+}

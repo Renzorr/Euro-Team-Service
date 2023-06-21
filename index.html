@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/index.css" />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>EURO</title>
+  </head>
+  <body>
+    <h1 class="sr-only">Euro Team Service</h1>
+    <header class="container">
+      <img src="./assets/logo.png" alt="Euro logo" loading="lazy" />
+
+      <nav id="navbar">
+        <ul>
+          <li><a href="#">Inicio</a></li>
+          <li><a href="#Nosotros">Nosotros</a></li>
+          <li><a href="#Servicios">Servicios</a></li>
+          <li><a href="#" class="link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <button class="menu" aria-label="hamburger menu">
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+    </header>
+
+    <main class="hero container">
+      <div class="hero-content">
+        <h2>La conducción de tu vida</h2>
+        <p>
+          Descubre una forma segura y cómoda de transportar a tu equipo.
+          Nuestros servicios de transporte de personal están diseñados para
+          ofrecerte viajes confiables y confortables.
+        </p>
+
+        <div class="link-section">
+          <a href="#" class="link">Rentar Ahora</a>
+          <a href="#Flota" class="link-underline">Ver Flota</a>
+        </div>
+      </div>
+      <img src="./assets/hero-img.png" alt="Mini vans" loading="lazy" />
+    </main>
+
+    <section class="about container" id="Nosotros">
+      <h2>Quienes Somos</h2>
+      <p>
+        Bienvenido a nuestra empresa de transporte de personal, donde nos
+        enfocamos en brindar servicios de viaje seguros y confortables. Con años
+        de experiencia en la industria, nos esforzamos por ofrecer soluciones
+        confiables y eficientes para cubrir las necesidades de transporte de
+        nuestros clientes.
+      </p>
+      <a href="#" class="link">Conocer más</a>
+    </section>
+
+    <section class="services container" id="Servicios">
+      <h2>Servicios</h2>
+      <div class="services-grid">
+        <div class="services-card">
+          <img src="./assets/airport.jpg" alt="" />
+          <div class="services-content">
+            <h3>Transferencia de Aeropuerto</h3>
+            <p>
+              Con tiempo de espera adicional y seguimiento de vuelos en caso de
+              retrasos, nuestro servicio está optimizado para que cada traslado
+              al aeropuerto sea muy sencillo.
+            </p>
+            <a href="#" class="link">Conocer más</a>
+          </div>
+        </div>
+
+        <div class="services-card">
+          <img src="./assets/trip.jpg" alt="" />
+          <div class="services-content">
+            <h3>Viajes Interurbanos</h3>
+            <p>
+              Su solución sin estrés para viajar entre ciudades con choferes de
+              todo el mundo.
+            </p>
+            <a href="#" class="link">Conocer más</a>
+          </div>
+        </div>
+
+        <div class="services-card">
+          <img src="./assets/wedding.jpg" alt="" />
+          <div class="services-content">
+            <h3>Eventos de Boda</h3>
+            <p>
+              Nuestro amable y atento servicio, combinado con una minuciosa
+              atención a los detalles, garantiza que pueda relajarse y disfrutar
+              de su día especial.
+            </p>
+            <a href="#" class="link">Conocer más</a>
+          </div>
+        </div>
+
+        <div class="services-card">
+          <img src="./assets/business.jpg" alt="" />
+          <div class="services-content">
+            <h3>Reunión de Negocios</h3>
+            <p>
+              Concéntrate en tu reunión con tus compañeros, olvídate de la
+              carretera y del coche, que distraerán tus pensamientos.
+            </p>
+            <a href="#" class="link">Conocer más</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="fleet container" id="Flota">
+      <div class="fleet-top">
+        <h2>Nuestra Flota</h2>
+        <p>
+          Ofrecemos una amplia flota de vehículos de acuerdo a tus necesidades
+        </p>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="fleet-car">
+              <img
+                src="./assets/van-1.png"
+                alt=" CHEVROLET EXPRESS CARGO VAN"
+              />
+            </div>
+            <h4>Chevrolet Express Cargo Van</h4>
+            <div class="passengers">
+              <i class="fa-regular fa-user"></i>
+              <span>15</span>
+            </div>
+          </div>
+
+          <div class="fleet-slider swiper-slide">
+            <div class="fleet-car">
+              <img src="./assets/van-2.png" alt=" Nissan Urvan nv350" />
+            </div>
+            <h4>Nissan Urvan nv350</h4>
+            <div class="passengers">
+              <i class="fa-regular fa-user"></i>
+              <span>15</span>
+            </div>
+          </div>
+
+          <div class="fleet-slider swiper-slide">
+            <div class="fleet-car">
+              <img src="./assets/van-3.png" alt=" Ford Transit Connect 2023" />
+            </div>
+            <h4>Ford Transit Connect 2023</h4>
+            <div class="passengers">
+              <i class="fa-regular fa-user"></i>
+              <span>7</span>
+            </div>
+          </div>
+
+          <div class="fleet-slider swiper-slide">
+            <div class="fleet-car">
+              <img src="./assets/van-4.png" alt=" Hyundai H-1 2023" />
+            </div>
+            <h4>Hyundai H-1 2023</h4>
+            <div class="passengers">
+              <i class="fa-regular fa-user"></i>
+              <span>12</span>
+            </div>
+          </div>
+
+          <div class="fleet-slider swiper-slide">
+            <div class="fleet-car">
+              <img src="./assets/van-5.png" alt="Toyota Hiace 2022" />
+            </div>
+            <h4>Toyota Hiace 2022</h4>
+            <div class="passengers">
+              <i class="fa-regular fa-user"></i>
+              <span>14</span>
+            </div>
+          </div>
+
+          <div class="fleet-slider swiper-slide">
+            <div class="fleet-car">
+              <img
+                src="./assets/van-6.png"
+                alt="Mercedes Benz Sprinter Cargo Van 2022"
+              />
+            </div>
+            <h4>Mercedes Benz Sprinter Cargo Van 2022</h4>
+            <div class="passengers">
+              <i class="fa-regular fa-user"></i>
+              <span>23</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>

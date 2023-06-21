@@ -1,0 +1,55 @@
+@use "../variables/variables" as v;
+
+.hero {
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
+
+  h2 {
+    font-size: v.$fs-xl;
+    width: 75%;
+    margin-bottom: 35px;
+  }
+
+  p {
+    font-size: v.$fs-md;
+    width: 80%;
+    line-height: 32px;
+    margin-bottom: 40px;
+  }
+
+  .link-section {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+}
+
+@media (width < 1460px) {
+  .hero {
+    text-align: center;
+    flex-direction: column;
+    gap: 50px;
+
+    .hero-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h2 {
+      width: 100%;
+    }
+
+    p {
+      width: 85%;
+    }
+
+    .link-section {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 50px;
+    }
+  }
+}
