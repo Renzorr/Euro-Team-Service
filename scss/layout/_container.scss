@@ -3,3 +3,9 @@
   max-width: 1600px;
   margin: 0 auto;
 }
+
+@media (width < 1000px) {
+  .container {
+    padding-inline: 20px;
+  }
+}

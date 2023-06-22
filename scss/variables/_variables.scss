@@ -1,6 +1,7 @@
 // MAIN COLORS
 
 $white: #fff;
+$gray: #808080cb;
 $light-gray: #f6f6f6;
 $purple: #4762ff;
 $light-purple: #4763ff5b;
@@ -12,7 +13,7 @@ $fs-xl: clamp(40px, 7cqw, 60px);
 $fs-lg: clamp(35px, 4cqw, 48px);
 $fs-lg2: clamp(18px, 4cqw, 23px);
 $fs-md: clamp(16px, 4cqw, 18px);
-$fs-sm: clamp(14px, 4cqw, 16px);
+$fs-sm: clamp(15px, 4cqw, 16px);
 
 // TRANSITION
 $transition: 0.3s;

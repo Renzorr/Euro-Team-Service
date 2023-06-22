@@ -1,0 +1,65 @@
+@use "../variables/variables" as v;
+
+footer {
+  padding: 60px 0;
+  margin-top: 150px;
+  background-color: v.$black;
+  color: v.$white;
+
+  .row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding: 40px;
+    gap: 50px;
+  }
+
+  img {
+    background-color: v.$white;
+    width: 135px;
+    height: 60px;
+    padding: 15px;
+    border-radius: v.$radius;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  h4 {
+    font-size: v.$fs-lg2;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-size: v.$fs-sm;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 10px;
+    color: v.$white;
+
+    a {
+      display: grid;
+      place-content: center;
+      width: 48px;
+      height: 48px;
+      border-radius: 100%;
+      background-color: v.$purple;
+    }
+  }
+
+  .copyright {
+    text-align: center;
+    margin-top: 150px;
+  }
+}
+
+// @media screen and (max-width: 1000px) {
+//   .row {
+//     flex-wrap: wrap;
+//     justify-content: center;
+//   }
+// }

@@ -11,7 +11,8 @@
 
     p {
       font-size: v.$fs-md;
-      margin-bottom: 50px;
+      color: v.$gray;
+      margin-bottom: 90px;
     }
   }
 
@@ -37,8 +38,7 @@
       }
     }
 
-    &:hover .fleet-car,
-    &:hover .passengers {
+    &:hover .fleet-car {
       background-color: v.$light-purple;
     }
 
