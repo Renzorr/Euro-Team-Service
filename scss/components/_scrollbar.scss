@@ -1,0 +1,14 @@
+@use "../variables/variables" as v;
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: v.$light-gray;
+}
+
+::-webkit-scrollbar-thumb {
+  background: v.$purple;
+  border-radius: v.$radius;
+}

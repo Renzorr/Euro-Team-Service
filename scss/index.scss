@@ -4,6 +4,8 @@
 
 // COMPONENTS
 @forward "./components/link";
+@forward "./components/scrollbar";
+
 
 // SECTIONS
 @forward "./layout/container";
@@ -14,7 +16,11 @@
 @forward "./section/services";
 @forward "./section/fleet";
 @forward "./section/why-us";
+@forward "./section/contact";
 @forward "./section/footer";
+
+//PAGES
+@forward "./pages/calculator.scss";
 
 
 

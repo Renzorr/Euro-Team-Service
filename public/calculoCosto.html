@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/index.css" />
+    <title>Calculadora de Costos</title>
+  </head>
+  <body class="calculator-body">
+    <h1 class="sr-only">Calculadora de Costo de Transporte de Personal</h1>
+
+    <main class="calculator-container">
+      <div class="calculator-grid">
+        <div class="grid-item">
+          <label for="origen">Origen</label>
+          <input type="text" id="origen" value="Lima" readonly />
+        </div>
+
+        <div class="grid-item">
+          <label for="destino">Destino:</label>
+          <div class="select-container">
+            <select id="destino">
+              <option value="Ancón">Ancón</option>
+              <option value="Carabayllo">Carabayllo</option>
+              <option value="Comas">Comas</option>
+              <option value="Independencia">Independencia</option>
+              <option value="Los Olivos">Los Olivos</option>
+              <option value="Puente Piedra">Puente Piedra</option>
+              <option value="San Martín de Porres">San Martín de Porres</option>
+              <option value="Santa Rosa">Santa Rosa</option>
+              <option value="Barranco">Barranco</option>
+              <option value="Breña">Breña</option>
+              <option value="Jesús María">Jesús María</option>
+              <option value="La Victoria">La Victoria</option>
+              <option value="Lima">Lima</option>
+              <option value="Lince">Lince</option>
+              <option value="Magdalena del Mar">Magdalena del Mar</option>
+              <option value="Miraflores">Miraflores</option>
+              <option value="Pueblo Libre">Pueblo Libre</option>
+              <option value="Rímac">Rímac</option>
+              <option value="San Borja">San Borja</option>
+              <option value="San Isidro">San Isidro</option>
+              <option value="San Miguel">San Miguel</option>
+              <option value="Santiago de Surco">Santiago de Surco</option>
+              <option value="Surquillo">Surquillo</option>
+              <option value="Ate">Ate</option>
+              <option value="Chaclacayo">Chaclacayo</option>
+              <option value="Cieneguilla">Cieneguilla</option>
+              <option value="El Agustino">El Agustino</option>
+              <option value="Huaycán">Huaycán (Comunidad)</option>
+              <option value="La Molina">La Molina</option>
+              <option value="Lurigancho">Lurigancho</option>
+              <option value="San Juan de Lurigancho">
+                San Juan de Lurigancho
+              </option>
+              <option value="San Luis">San Luis</option>
+              <option value="Santa Anita">Santa Anita</option>
+              <option value="Chorrillos">Chorrillos</option>
+              <option value="Lurín">Lurín</option>
+              <option value="Pachacamac">Pachacamac</option>
+              <option value="Pucusana">Pucusana</option>
+              <option value="Punta Hermosa">Punta Hermosa</option>
+              <option value="Punta Negra">Punta Negra</option>
+              <option value="San Bartolo">San Bartolo</option>
+              <option value="San Juan de Miraflores">
+                San Juan de Miraflores
+              </option>
+              <option value="Santa María del Mar">Santa María del Mar</option>
+              <option value="Villa El Salvador">Villa El Salvador</option>
+              <option value="Villa María del Triunfo">
+                Villa María del Triunfo
+              </option>
+            </select>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+        </div>
+
+        <div class="grid-item">
+          <label for="pasajeros">Pasajeros:</label>
+          <input type="number" id="pasajeros" />
+        </div>
+
+        <div class="grid-item">
+          <label for="tipo-servicio">Tipo de Servicio:</label>
+          <div class="select-container">
+            <select id="tipo-servicio">
+              <option value="Personal">Personal</option>
+              <option value="Turistico">Turistico</option>
+              <option value="Coorporativo">Coorporativo</option>
+            </select>
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+        </div>
+      </div>
+
+      <button class="link calculator-btn" onclick="calcularCostoViaje()">
+        Calcular
+      </button>
+
+      <div class="result-container">
+        <div class="result-person">
+          <i class="fa-solid fa-user"></i>
+          <p id="persona">S/ . 0.00</p>
+        </div>
+        <div class="calculator-result">
+          <span>Total : </span>
+          <p id="resultado">S/ . 0.00</p>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="./js/calculoCosto.js"></script>
+  </body>
+</html>

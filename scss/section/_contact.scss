@@ -1,0 +1,70 @@
+@use "../variables/variables" as v;
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 950px;
+  margin-block: 250px;
+  margin-inline: auto;
+  background-color: v.$light-gray;
+  border-radius: v.$radius-xl;
+  color: v.$black;
+  padding: 50px 20px 70px;
+
+  h2 {
+    width: 75%;
+    font-size: v.$fs-lg;
+    margin-bottom: 35px;
+  }
+
+  form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+
+    input {
+      border-radius: v.$radius;
+      border: none;
+      padding: 15px 10px;
+      font-size: v.$fs-sm;
+      width: 100%;
+    }
+
+    input[type="email"] {
+      max-width: 400px;
+      color: v.$gray;
+      outline: none;
+      margin-bottom: 40px;
+      border: 1px solid v.$gray;
+
+      &::placeholder {
+        color: v.$gray;
+      }
+    }
+
+    input[type="submit"] {
+      color: v.$white;
+      background-color: v.$purple;
+      max-width: 200px;
+      align-self: center;
+      text-align: center;
+      cursor: pointer;
+      transition: v.$transition;
+
+      &:hover {
+        background-color: v.$dark-purple;
+      }
+    }
+  }
+}
+
+@media (width < 420px) {
+  .contact {
+    h2 {
+      width: 100%;
+    }
+  }
+}

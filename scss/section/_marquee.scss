@@ -4,10 +4,9 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 30px;
   margin-block: 100px;
   background-color: v.$light-gray;
-  padding: 30px;
+  padding: 30px 10px;
   border-radius: v.$radius-xl;
 
   .company {
