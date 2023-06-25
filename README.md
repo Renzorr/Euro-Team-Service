@@ -1,7 +1,7 @@
 
 # Proyecto Euro Team Service
 
-En este proyecto, se utilizó Html, Sass, Javascript y SweetAlert.
+En este proyecto, se utilizó Html, Sass, Javascript, SwiperJS y SweetAlert.
 
 ## Instalación
 
@@ -42,3 +42,5 @@ Aquí tienes algunos recursos adicionales para ayudarte a familiarizarte con Sas
 * Documentación de Sass: https://sass-lang.com/documentation
 
 * Guía oficial de SweetAlert: https://sweetalert2.github.io
+
+* Guía oficial de SwiperJs: https://swiperjs.com/element 
