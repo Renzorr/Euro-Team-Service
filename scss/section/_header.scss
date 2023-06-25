@@ -59,6 +59,12 @@ header {
   transform: translateY(-6px) rotate(-40deg);
 }
 
+@media (width < 1430px) {
+  header {
+    padding-block: 50px 150px !important;
+  }
+}
+
 @media (width < 860px) {
   .menu {
     display: flex;

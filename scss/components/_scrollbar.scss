@@ -1,7 +1,7 @@
 @use "../variables/variables" as v;
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
@@ -10,5 +10,4 @@
 
 ::-webkit-scrollbar-thumb {
   background: v.$purple;
-  border-radius: v.$radius;
 }

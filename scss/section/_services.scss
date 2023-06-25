@@ -1,7 +1,7 @@
 @use "../variables/variables" as v;
 
 .services {
-  margin-bottom: 150px;
+  margin-bottom: v.$spacing;
 
   h2 {
     text-align: center;

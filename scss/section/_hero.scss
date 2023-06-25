@@ -3,7 +3,7 @@
 .hero {
   display: flex;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: v.$spacing;
 
   h2 {
     font-size: v.$fs-xl;

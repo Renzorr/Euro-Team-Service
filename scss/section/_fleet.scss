@@ -1,6 +1,8 @@
 @use "../variables/variables" as v;
 
 .fleet {
+  margin-bottom: v.$spacing;
+
   .fleet-top {
     text-align: center;
 

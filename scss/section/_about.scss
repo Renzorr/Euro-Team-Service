@@ -6,9 +6,9 @@
   border-radius: v.$radius-xl;
   min-height: 420px;
   overflow: hidden;
-  background: url("../../assets/about-img.png") 120% center / contain no-repeat
+  background: url("../../assets/about-img.webp") 120% center / contain no-repeat
     rgb(246, 246, 246);
-  margin-bottom: 150px;
+  margin-bottom: v.$spacing;
 
   h2 {
     font-size: v.$fs-lg;

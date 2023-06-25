@@ -110,6 +110,12 @@
     background-color: v.$light-gray;
     font-size: v.$fs-lg2;
   }
+
+  .calculator-result {
+    p {
+      font-weight: bold;
+    }
+  }
 }
 
 @media (width < 720px) {

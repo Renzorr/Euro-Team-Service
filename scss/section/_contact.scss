@@ -6,7 +6,7 @@
   align-items: center;
   text-align: center;
   max-width: 950px;
-  margin-block: 250px;
+  margin-bottom: v.$spacing-xl;
   margin-inline: auto;
   background-color: v.$light-gray;
   border-radius: v.$radius-xl;
@@ -42,6 +42,10 @@
 
       &::placeholder {
         color: v.$gray;
+      }
+
+      &:focus {
+        border: 1px solid v.$purple;
       }
     }
 

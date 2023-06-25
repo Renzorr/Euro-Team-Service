@@ -1,7 +1,7 @@
 @use "../variables/variables" as v;
 
 .why-us {
-  margin-block: 150px;
+  margin-bottom: v.$spacing-xl;
 
   h3 {
     font-size: v.$fs-lg;

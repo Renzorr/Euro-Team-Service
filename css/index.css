@@ -72,7 +72,7 @@ button {
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
@@ -81,7 +81,6 @@ button {
 
 ::-webkit-scrollbar-thumb {
   background: #4762ff;
-  border-radius: 5px;
 }
 
 .container {
@@ -149,6 +148,11 @@ header ul {
   transform: translateY(-6px) rotate(-40deg);
 }
 
+@media (width < 1430px) {
+  header {
+    padding-block: 50px 150px !important;
+  }
+}
 @media (width < 860px) {
   .menu {
     display: flex;
@@ -180,7 +184,7 @@ header ul {
 .hero {
   display: flex;
   align-items: center;
-  margin-bottom: 100px;
+  margin-bottom: 150px;
 }
 .hero h2 {
   font-size: clamp(40px, 7cqw, 60px);
@@ -227,7 +231,7 @@ header ul {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-block: 100px;
+  margin-bottom: 150px;
   background-color: #f6f6f6;
   padding: 30px 10px;
   border-radius: 15px;
@@ -255,7 +259,7 @@ header ul {
   border-radius: 15px;
   min-height: 420px;
   overflow: hidden;
-  background: url("../../assets/about-img.png") 120% center/contain no-repeat rgb(246, 246, 246);
+  background: url("../../assets/about-img.webp") 120% center/contain no-repeat rgb(246, 246, 246);
   margin-bottom: 150px;
 }
 .about h2 {
@@ -342,6 +346,9 @@ header ul {
     position: inherit;
   }
 }
+.fleet {
+  margin-bottom: 150px;
+}
 .fleet .fleet-top {
   text-align: center;
 }
@@ -398,7 +405,7 @@ header ul {
   }
 }
 .why-us {
-  margin-block: 150px;
+  margin-bottom: 200px;
 }
 .why-us h3 {
   font-size: clamp(35px, 4cqw, 48px);
@@ -450,7 +457,7 @@ header ul {
   align-items: center;
   text-align: center;
   max-width: 950px;
-  margin-block: 250px;
+  margin-bottom: 200px;
   margin-inline: auto;
   background-color: #f6f6f6;
   border-radius: 15px;
@@ -484,6 +491,9 @@ header ul {
 }
 .contact form input[type=email]::placeholder {
   color: rgba(128, 128, 128, 0.7960784314);
+}
+.contact form input[type=email]:focus {
+  border: 1px solid #4762ff;
 }
 .contact form input[type=submit] {
   color: #fff;
@@ -655,6 +665,9 @@ footer .copyright {
   padding: 20px 25px;
   background-color: #f6f6f6;
   font-size: clamp(18px, 4cqw, 22px);
+}
+.result-container .calculator-result p {
+  font-weight: bold;
 }
 
 @media (width < 720px) {
