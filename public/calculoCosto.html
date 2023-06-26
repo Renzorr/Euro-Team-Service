@@ -20,12 +20,12 @@
 
     <main class="calculator-container">
       <div class="calculator-grid">
-        <div class="grid-item">
+        <div class="grid-item" id="item">
           <label for="origen">Origen</label>
           <input type="text" id="origen" value="Lima" readonly />
         </div>
 
-        <div class="grid-item">
+        <div class="grid-item" id="item">
           <label for="destino">Destino:</label>
           <div class="select-container">
             <select id="destino"></select>
@@ -33,12 +33,12 @@
           </div>
         </div>
 
-        <div class="grid-item">
+        <div class="grid-item" id="item">
           <label for="pasajeros">Pasajeros:</label>
           <input type="number" id="pasajeros" />
         </div>
 
-        <div class="grid-item">
+        <div class="grid-item" id="item">
           <label for="tipo-servicio">Tipo de Servicio:</label>
           <div class="select-container">
             <select id="tipo-servicio">
@@ -57,19 +57,21 @@
       <button class="link calculator-btn" id="btn-calulator">Calcular</button>
 
       <div class="result-container">
-        <div class="result-person">
+        <div class="result-person" id="item">
           <i class="fa-solid fa-user"></i>
           <p id="persona">S/ . 0.00</p>
         </div>
-        <div class="calculator-result">
+        <div class="calculator-result" id="item">
           <span>Total : </span>
           <p id="resultado">S/ . 0.00</p>
         </div>
       </div>
     </main>
 
+    <!-- SWEET ALERT  CDN-->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
+    <!-- GSAP CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js"></script>
     <script src="./js/calculoCosto.js"></script>
   </body>
 </html>

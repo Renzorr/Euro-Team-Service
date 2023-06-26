@@ -3,6 +3,22 @@ const porPersonaArea = document.getElementById("persona");
 const destinoContainer = document.getElementById("destino");
 const btnCalcular = document.getElementById("btn-calulator");
 
+// INSTACIAR ALERTA
+let alert = Swal.mixin({
+  toast: true,
+  position: "top-right",
+  color: "#fff",
+  background: "#4762ff",
+  showConfirmButton: false,
+  timer: 1500,
+});
+
+//INSTACIAR GSAP
+let tl = gsap.timeline();
+//AÑADIR ANIMACIONES
+tl.from("main", { scale: 0, ease: "ease-out", duration: 0.8 });
+tl.from("#item", { scale: 0, stagger: 0.1, ease: "power2" });
+
 //FUNCION PARA CARGAR LA DATA DE LOS DISTRITOS
 async function cargarData() {
   const url = "../public/js/distritos.json";
@@ -19,16 +35,6 @@ function crearDistrito(data) {
   let distrito = `<option value=${data.name}>${data.name}</option>`;
   destinoContainer.innerHTML += distrito;
 }
-
-// INSTACIAR ALERTA
-let alert = Swal.mixin({
-  toast: true,
-  position: "top-right",
-  color: "#fff",
-  background: "#4762ff",
-  showConfirmButton: false,
-  timer: 1500,
-});
 
 // FUNCION CALCULAR VIAJE
 function calcularCostoViaje() {
@@ -66,6 +72,8 @@ function calcularCostoViaje() {
 
   porPersonaArea.innerHTML = `S/. ${precios[tipoServicio]}`;
   resultadoArea.innerHTML = `S/. ${resultado}`;
+
+  tl.from(resultadoArea, { opacity: 0, duration: 1 });
 }
 
 //LLAMADA DE FUNCION
