@@ -6,6 +6,8 @@ menuHamburger.addEventListener("click", () => {
   menuHamburger.classList.toggle("active");
   navBar.classList.toggle("active");
 });
+
+
 // CARROUSEL DE FLOTA
 const swiper = new Swiper(".swiper", {
   slidesPerView: "auto",

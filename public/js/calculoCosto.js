@@ -36,9 +36,10 @@ function calcularCostoViaje() {
   const tipoServicio = document.getElementById("tipo-servicio").value;
 
   const precios = {
-    Personal: 50.0,
-    Turistico: 80.0,
-    Coorporativo: 60.0,
+    TransferenciadeAeropuerto: 50.0,
+    ViajesInterurbanos: 80.0,
+    EventosdeBoda: 60.0,
+    ReuniondeNegocios: 90.0,
   };
 
   if (pasajeros > 23) {
@@ -49,13 +50,14 @@ function calcularCostoViaje() {
     });
     return;
   }
+
   if (pasajeros < 1 || isNaN(pasajeros)) {
     return;
   }
 
   let costoPorPersona = precios[tipoServicio];
 
-  if (pasajeros > 10) {
+  if (pasajeros > 14) {
     costoPorPersona *= 0.9;
   }
 
