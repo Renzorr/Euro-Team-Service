@@ -23,61 +23,71 @@ let tl = gsap.timeline();
 
 tl.from(".header", { y: -100, opacity: 0, duration: 1, ease: "ease" });
 
-tl.from(".hero", {
-  x: -100,
-  opacity: 0,
-  delay: 0.3,
-});
+tl.from(
+  ".hero",
+  {
+    x: -100,
+    opacity: 0,
+  },
+  "+=.5"
+);
 
-gsap.from(".marquee", {
-  opacity: 0,
-  y: 500,
-  duration: 0.7,
+tl.from(".marquee", {
   scrollTrigger: {
     trigger: ".marquee",
+    start: "bottom bottom",
   },
+  opacity: 0,
+  y: 500,
+  duration: 1,
 });
 
 gsap.from(".about", {
+  scrollTrigger: {
+    trigger: ".about",
+    start: "bottom bottom",
+  },
   opacity: 0,
   x: -500,
   duration: 0.7,
-  scrollTrigger: {
-    trigger: ".about",
-  },
 });
 
 gsap.from(".services-card", {
-  opacity: 0,
-  duration: 0.8,
-  stagger: 0.2,
   scrollTrigger: {
     trigger: ".services-card",
+    start: "bottom bottom",
   },
+  opacity: 0,
+  duration: 0.7,
+  stagger: 0.6,
 });
 
 gsap.from(".swiper", {
-  opacity: 0,
-  duration: 1,
   scrollTrigger: {
     trigger: ".swiper",
+    start: "bottom bottom",
   },
+  opacity: 0,
+  duration: 1,
 });
 
 gsap.from(".why-us-container", {
-  opacity: 0,
-  y: -100,
-  duration: 1,
   scrollTrigger: {
     trigger: ".why-us-container",
+    start: "bottom bottom",
   },
+  opacity: 0,
+  y: -300,
+  duration: 1,
 });
 
 gsap.from(".contact", {
-  opacity: 0,
-  x: -100,
-  duration: 1,
   scrollTrigger: {
     trigger: ".contact",
+    start: "bottom bottom",
   },
+  opacity: 0,
+  scale: 0,
+  duration: 1,
+  ease: "power4.out",
 });
